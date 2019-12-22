@@ -20,63 +20,31 @@ namespace Persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("address");
+                    b.Property<string>("Address");
 
-                    b.Property<string>("area");
+                    b.Property<string>("Area");
 
-                    b.Property<string>("companyName");
+                    b.Property<string>("CompanyName");
 
-                    b.Property<string>("companyType");
+                    b.Property<string>("CompanyType");
 
-                    b.Property<string>("contactName");
+                    b.Property<string>("ContactName");
 
-                    b.Property<string>("country");
+                    b.Property<string>("Country");
 
-                    b.Property<string>("mobileCountryCode");
+                    b.Property<string>("MobileCountryCode");
 
-                    b.Property<string>("mobileNumber");
+                    b.Property<string>("MobileNumber");
 
-                    b.Property<string>("naupliiSupplier");
+                    b.Property<string>("NaupliiSupplier");
 
-                    b.Property<string>("referralCode");
+                    b.Property<string>("ReferralCode");
 
-                    b.Property<string>("state");
+                    b.Property<string>("State");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            address = "Paraipatty",
-                            area = "Dindigul",
-                            companyName = "IG",
-                            companyType = "IT",
-                            contactName = "Mohideen Abdul Katheer M",
-                            country = "India",
-                            mobileCountryCode = "91",
-                            mobileNumber = "8220644661",
-                            naupliiSupplier = "None",
-                            referralCode = "None",
-                            state = "Tamilnadu"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            address = "TNagar",
-                            area = "Chennai",
-                            companyName = "Accenture",
-                            companyType = "IT",
-                            contactName = "Dhanalakshmi N",
-                            country = "India",
-                            mobileCountryCode = "91",
-                            mobileNumber = "9789161541",
-                            naupliiSupplier = "None",
-                            referralCode = "None",
-                            state = "Tamilnadu"
-                        });
                 });
 #pragma warning restore 612, 618
         }

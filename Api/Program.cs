@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Persistence.Bootstrap;
 using Persistence.Context;
 
 namespace Api
@@ -25,6 +26,7 @@ namespace Api
                 {
                     var dbContext = scope.ServiceProvider.GetRequiredService<DatabaseContext>();
                     dbContext.Database.Migrate();
+                    Seed.SeedData(dbContext);
                 }
                 catch (Exception e) 
                 {

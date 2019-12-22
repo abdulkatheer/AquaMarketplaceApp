@@ -5,26 +5,26 @@ namespace Domain.Model
 
         public int Id { get; set;}
         
-        public string mobileCountryCode { get; set;}
+        public string MobileCountryCode { get; set;}
 
-        public string mobileNumber { get; set;}
+        public string MobileNumber { get; set;}
 
-        public string contactName { get; set;}
+        public string ContactName { get; set;}
 
-        public string companyName { get; set;}
+        public string CompanyName { get; set;}
 
-        public string companyType { get; set;}
+        public string CompanyType { get; set;}
 
-        public string naupliiSupplier { get; set;}
+        public string NaupliiSupplier { get; set;}
 
-        public string country { get; set;}
+        public string Country { get; set;}
 
-        public string state { get; set;}
+        public string State { get; set;}
 
-        public string area { get; set;}
+        public string Area { get; set;}
 
-        public string address { get; set;}
+        public string Address { get; set;}
 
-        public string referralCode { get; set;}
+        public string ReferralCode { get; set;}
     }
 }

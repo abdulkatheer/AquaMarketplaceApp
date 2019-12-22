@@ -8,8 +8,8 @@ using Persistence.Context;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20191222094938_UserTable")]
-    partial class UserTable
+    [Migration("20191222113303_InitialCommit")]
+    partial class InitialCommit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -22,25 +22,27 @@ namespace Persistence.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("area");
+                    b.Property<string>("Address");
 
-                    b.Property<string>("companyName");
+                    b.Property<string>("Area");
 
-                    b.Property<string>("companyType");
+                    b.Property<string>("CompanyName");
 
-                    b.Property<string>("contactName");
+                    b.Property<string>("CompanyType");
 
-                    b.Property<string>("country");
+                    b.Property<string>("ContactName");
 
-                    b.Property<string>("mobileCountryCode");
+                    b.Property<string>("Country");
 
-                    b.Property<string>("mobileNumber");
+                    b.Property<string>("MobileCountryCode");
 
-                    b.Property<string>("naupliiSupplier");
+                    b.Property<string>("MobileNumber");
 
-                    b.Property<string>("referralCode");
+                    b.Property<string>("NaupliiSupplier");
 
-                    b.Property<string>("state");
+                    b.Property<string>("ReferralCode");
+
+                    b.Property<string>("State");
 
                     b.HasKey("Id");
 
