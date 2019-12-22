@@ -26,7 +26,7 @@ namespace Persistence.Migrations
 
                     b.Property<string>("CompanyName");
 
-                    b.Property<string>("CompanyType");
+                    b.Property<int>("CompanyType");
 
                     b.Property<string>("ContactName");
 
@@ -36,7 +36,7 @@ namespace Persistence.Migrations
 
                     b.Property<string>("MobileNumber");
 
-                    b.Property<string>("NaupliiSupplier");
+                    b.Property<bool>("NaupliiSupplier");
 
                     b.Property<string>("ReferralCode");
 

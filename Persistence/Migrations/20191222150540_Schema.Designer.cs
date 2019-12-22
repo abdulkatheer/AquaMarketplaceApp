@@ -8,8 +8,8 @@ using Persistence.Context;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20191222113303_InitialCommit")]
-    partial class InitialCommit
+    [Migration("20191222150540_Schema")]
+    partial class Schema
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,7 +28,7 @@ namespace Persistence.Migrations
 
                     b.Property<string>("CompanyName");
 
-                    b.Property<string>("CompanyType");
+                    b.Property<int>("CompanyType");
 
                     b.Property<string>("ContactName");
 
@@ -38,7 +38,7 @@ namespace Persistence.Migrations
 
                     b.Property<string>("MobileNumber");
 
-                    b.Property<string>("NaupliiSupplier");
+                    b.Property<bool>("NaupliiSupplier");
 
                     b.Property<string>("ReferralCode");
 

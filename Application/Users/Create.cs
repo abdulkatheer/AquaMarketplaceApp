@@ -1,3 +1,4 @@
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Domain.Model;
@@ -10,8 +11,6 @@ namespace Application.Users
     {
         public class Command : IRequest
         {
-            public int Id { get; set;}
-        
             public string MobileCountryCode { get; set;}
 
             public string MobileNumber { get; set;}
@@ -20,9 +19,9 @@ namespace Application.Users
 
             public string CompanyName { get; set;}
 
-            public string CompanyType { get; set;}
+            public CompanyType CompanyType { get; set;}
 
-            public string NaupliiSupplier { get; set;}
+            public bool NaupliiSupplier { get; set;}
 
             public string Country { get; set;}
 
@@ -48,7 +47,6 @@ namespace Application.Users
             {
                 var user = new User
                 {
-                    Id = request.Id,
                     MobileCountryCode = request.MobileCountryCode,
                     MobileNumber = request.MobileNumber,
                     ContactName = request.ContactName,

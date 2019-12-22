@@ -1,23 +1,30 @@
 namespace Domain.Model
 {
+
+    public enum CompanyType
+    {
+        Hatchery,
+        Farm,
+        Consultant
+
+    }
     public class User
     {
-
         public int Id { get; set;}
         
         public string MobileCountryCode { get; set;}
 
-        public string MobileNumber { get; set;}
+        public string MobileNumber { get; set;} = "91";
 
         public string ContactName { get; set;}
 
         public string CompanyName { get; set;}
 
-        public string CompanyType { get; set;}
+        public CompanyType CompanyType { get; set;}
 
-        public string NaupliiSupplier { get; set;}
+        public bool NaupliiSupplier { get; set;}
 
-        public string Country { get; set;}
+        public string Country { get; set;} = "India";
 
         public string State { get; set;}
 

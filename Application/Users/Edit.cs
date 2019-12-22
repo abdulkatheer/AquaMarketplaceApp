@@ -1,5 +1,6 @@
 using System.Threading;
 using System.Threading.Tasks;
+using Domain.Model;
 using MediatR;
 using Persistence.Context;
 
@@ -19,9 +20,9 @@ namespace Application.Users
 
             public string CompanyName { get; set;}
 
-            public string CompanyType { get; set;}
+            public CompanyType? CompanyType { get; set;}
 
-            public string NaupliiSupplier { get; set;}
+            public bool? NaupliiSupplier { get; set;}
 
             public string Country { get; set;}
 

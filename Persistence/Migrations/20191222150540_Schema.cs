@@ -2,7 +2,7 @@
 
 namespace Persistence.Migrations
 {
-    public partial class InitialCommit : Migration
+    public partial class Schema : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,8 +16,8 @@ namespace Persistence.Migrations
                     MobileNumber = table.Column<string>(nullable: true),
                     ContactName = table.Column<string>(nullable: true),
                     CompanyName = table.Column<string>(nullable: true),
-                    CompanyType = table.Column<string>(nullable: true),
-                    NaupliiSupplier = table.Column<string>(nullable: true),
+                    CompanyType = table.Column<int>(nullable: false),
+                    NaupliiSupplier = table.Column<bool>(nullable: false),
                     Country = table.Column<string>(nullable: true),
                     State = table.Column<string>(nullable: true),
                     Area = table.Column<string>(nullable: true),

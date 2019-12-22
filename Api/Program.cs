@@ -25,7 +25,7 @@ namespace Api
                 }
                 catch (Exception e) 
                 {
-                    var logger = scope.ServiceProvider.GetRequiredService<Logger<Program>>();
+                    var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
                     logger.LogError("An error occured while executing DB Migration", e);
                 }
                 
