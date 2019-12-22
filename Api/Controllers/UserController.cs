@@ -25,7 +25,7 @@ namespace Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> Details(int id)
+        public async Task<ActionResult<User>> Find(int id)
         {
             return await _mediator.Send(new Find.Query{Id = id});
         }

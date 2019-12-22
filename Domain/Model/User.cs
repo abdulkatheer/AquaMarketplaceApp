@@ -12,9 +12,9 @@ namespace Domain.Model
     {
         public int Id { get; set;}
         
-        public string MobileCountryCode { get; set;}
+        public string MobileCountryCode { get; set;} = "91";
 
-        public string MobileNumber { get; set;} = "91";
+        public string MobileNumber { get; set;}
 
         public string ContactName { get; set;}
 

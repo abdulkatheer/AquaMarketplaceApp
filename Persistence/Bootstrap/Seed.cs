@@ -64,7 +64,7 @@ namespace Persistence.Bootstrap
                         MobileNumber="7927927831", 
                         ContactName="Vinothkumar N",
                         CompanyName="Kaar Tech", 
-                        CompanyType=CompanyType.Consultant, 
+                        CompanyType=0, 
                         NaupliiSupplier=true, 
                         Country="India", 
                         State="Tamilnadu",
